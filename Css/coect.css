@@ -1,0 +1,197 @@
+
+        * {
+            box-sizing: border-box;
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f3fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #7044a3;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header p {
+            line-height: 1.8;
+        }
+
+        .page-buttons {
+            text-align: center;
+            padding: 12px;
+            background-color: #f0e7fa;
+        }
+
+        .page-buttons button {
+            width: auto;
+            margin: 5px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 20px;
+            background-color: #7044a3;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        nav {
+            background-color: #573080;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin: 8px 12px;
+        }
+
+        nav a:hover {
+            color: #e5c8ff;
+        }
+
+        .container {
+            background-color: white;
+            width: 85%;
+            max-width: 600px;
+            margin: 35px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #d5c5e8;
+        }
+
+        h2 {
+            color: #7044a3;
+            text-align: center;
+        }
+
+        .container p {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #c9b5df;
+            border-radius: 7px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .send-button {
+            width: 100%;
+            background-color: #7044a3;
+            color: white;
+            padding: 13px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #573080;
+        }
+
+        /* رسالة نجاح الإرسال */
+        #successMessage {
+            display: none;
+            background-color: #f5edff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        #successMessage h3 {
+            color: #7044a3;
+        }
+
+        #whatsappLink {
+            display: block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #573080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* الوضع الداكن */
+        body.dark-mode {
+            background-color: #222;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode .page-buttons {
+            background-color: #292929;
+        }
+
+        body.dark-mode .container {
+            background-color: #383838;
+            color: white;
+            box-shadow: 0 4px 12px #111;
+        }
+
+        body.dark-mode h2 {
+            color: #d7b4ff;
+        }
+
+        body.dark-mode input,
+        body.dark-mode textarea {
+            background-color: #292929;
+            color: white;
+            border-color: #765b91;
+        }
+
+        body.dark-mode input::placeholder,
+        body.dark-mode textarea::placeholder {
+            color: #ccc;
+        }
+
+        body.dark-mode #successMessage {
+            background-color: #292929;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 92%;
+                padding: 18px;
+            }
+
+            nav a {
+                margin: 6px;
+            }
+        }
