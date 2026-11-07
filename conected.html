@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | غيمة ستور</title>
+  <link rel="stylesheet" href="coect.css">
+   <script src="contact.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1 data-ar="☁️ غيمة ستور" data-en="☁️ Gima Store">
+            ☁️ غيمة ستور
+        </h1>
+
+        <p data-ar="سعيدين بزيارتك، ونحن دائماً في خدمتك"
+           data-en="We are happy to have you. We are always here to help.">
+            سعيدين بزيارتك، ونحن دائماً في خدمتك
+        </p>
+    </header>
+
+    <div class="page-buttons">
+        <button type="button" id="languageButton">🌐 English</button>
+        <button type="button" id="themeButton">🌙 الوضع الداكن</button>
+    </div>
+
+    <nav>
+        <a href="home.html"
+           data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+
+        <a href="products.html"
+           data-ar="المنتجات" data-en="Products">المنتجات</a>
+
+        <a href="offer.html"
+           data-ar="العروض" data-en="Offers">العروض</a>
+
+        <a href="about.html"
+           data-ar="من نحن" data-en="about">العروض</a>
+
+        <a href="logout.html"
+           data-ar="تسجيل خروج" data-en="logout">العروض</a>
+    </nav>
+
+    <div class="container">
+
+        <h2 data-ar="تواصل معنا 💜" data-en="Contact Us 💜">
+            تواصل معنا 💜
+        </h2>
+
+        <p
+            data-ar="عندك استفسار عن منتجاتنا أو محتاجة مساعدة؟ أرسلي لينا رسالتك، ويسعدنا التواصل معاك."
+            data-en="Have a question about our products or need help? Send us a message. We will be happy to help.">
+            عندك استفسار عن منتجاتنا أو محتاجة مساعدة؟
+            أرسلي لينا رسالتك، ويسعدنا التواصل معاك.
+        </p>
+
+        <form id="contactForm" action="contact.php" method="POST">
+
+            <label for="name"
+                   data-ar="الاسم الكامل:"
+                   data-en="Full Name:">الاسم الكامل:</label>
+
+            <input type="text" id="name" name="name"
+                   placeholder="اكتبي اسمك"
+                   data-ar-placeholder="اكتبي اسمك"
+                   data-en-placeholder="Enter your name"
+                   required>
+
+            <label for="phone"
+                   data-ar="رقم الهاتف:"
+                   data-en="Phone Number:">رقم الهاتف:</label>
+
+            <input type="tel" id="phone" name="phone"
+                   placeholder="أدخلي رقم هاتفك"
+                   data-ar-placeholder="أدخلي رقم هاتفك"
+                   data-en-placeholder="Enter your phone number"
+                   required>
+
+            <label for="email"
+                   data-ar="البريد الإلكتروني:"
+                   data-en="Email Address:">البريد الإلكتروني:</label>
+
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com"
+                   data-ar-placeholder="example@gmail.com"
+                   data-en-placeholder="example@gmail.com">
+
+            <label for="subject"
+                   data-ar="موضوع الرسالة:"
+                   data-en="Message Subject:">موضوع الرسالة:</label>
+
+            <input type="text" id="subject" name="subject"
+                   placeholder="موضوع استفسارك"
+                   data-ar-placeholder="موضوع استفسارك"
+                   data-en-placeholder="Enter your subject"
+                   required>
+
+            <label for="message"
+                   data-ar="رسالتك:"
+                   data-en="Your Message:">رسالتك:</label>
+
+            <textarea id="message" name="message"
+                      placeholder="اكتبي رسالتك هنا..."
+                      data-ar-placeholder="اكتبي رسالتك هنا..."
+                      data-en-placeholder="Write your message here..."
+                      required></textarea>
+
+            <button type="submit" class="send-button"
+                    data-ar="إرسال الرسالة"
+                    data-en="Send Message">
+                إرسال الرسالة
+            </button>
+
+        </form>
+
+
+        < id="successMessage">
+
+            <h3>💜 لقد تم استلام رسالتك بنجاح</h3>
+
+            <p>شكراً لاختيارك غيمة ستور ☁️</p>
+
+            <p>
+                إذا كان استفسارك مستعجلاً،
+                يمكنك التواصل معنا مباشرة عبر واتساب.
+            </p>
+
+            <a id="whatsappLink"
+               href="https://wa.me/message/K567TR7YECUVN1"
+               target="_blank">
+                💬 تواصل معنا عبر واتساب
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p data-ar="© 2026 غيمة ستور ☁️ | جميع الحقوق محفوظة"
+           data-en="© 2026 Gima Store ☁️ | All rights reserved">
+            © 2026 غيمة ستور ☁️ | جميع الحقوق محفوظة
+        </p>
+    </footer>
+
+</body>
+</html>
